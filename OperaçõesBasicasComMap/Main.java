@@ -1,8 +1,9 @@
 package com.dio.Map.OperaçõesBasicasComMap;
 
 public class Main {
-	public static void main (String[] args) throws InterruptedException {
+	public static void main (String[] args) {
 		
+		/*
 		AgendaContatos agendaContatos = new AgendaContatos();
 		
 		agendaContatos.adicionarContato("Ana Beatriz Silva", 987654321);
@@ -19,7 +20,20 @@ public class Main {
 		agendaContatos.removerContato("Ana Beatriz Silva");
 		agendaContatos.exibirContatos();
 		agendaContatos.pesquisarPorNome("Lucas Martins Farias");
+		*/
 		
+		Dicionario dicionario = new Dicionario();
+		
+		dicionario.adicionarPalavra("Roda", "Objeto mais ou menos circular; círculo.");
+		dicionario.adicionarPalavra("Intervenção", "Ato de intervir, de exercer influência em determinada situação na tentativa de alterar o seu resultado; interferência.");
+		dicionario.adicionarPalavra("Inhame", "Planta tropical, de origem asiática, de folhas largas e espatas brancas, sua parte comestível é formada por um ou mais tubérculos grossos subterrâneos.");
+		dicionario.adicionarPalavra("Emenda", "Ação de emendar, de corrigir, de acabar com os defeitos.");
+		dicionario.adicionarPalavra("Integral", "Que se apresenta na sua totalidade; total, inteiro, completo.");
+		
+		dicionario.exibirPalavras();
+		dicionario.removerPalavra("Roda");
+		dicionario.removerPalavra("chave");
+		dicionario.pesquisarPorPalavra("Intervenção");
 	}
 
 }
