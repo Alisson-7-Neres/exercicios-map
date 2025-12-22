@@ -1,9 +1,8 @@
 package com.dio.Map.OperaçõesBasicasComMap;
 
 public class Main {
-	public static void main (String[] args) {
+	public static void main (String[] args) throws InterruptedException {
 		
-		/*
 		AgendaContatos agendaContatos = new AgendaContatos();
 		
 		agendaContatos.adicionarContato("Ana Beatriz Silva", 987654321);
@@ -18,10 +17,11 @@ public class Main {
 		agendaContatos.adicionarContato("Gabriel Henrique Vaz", 998765432);
 		
 		agendaContatos.removerContato("Ana Beatriz Silva");
+		agendaContatos.removerContato("Ana Clara Silva");
 		agendaContatos.exibirContatos();
 		agendaContatos.pesquisarPorNome("Lucas Martins Farias");
-		*/
 		
+		/*
 		Dicionario dicionario = new Dicionario();
 		
 		dicionario.adicionarPalavra("Roda", "Objeto mais ou menos circular; círculo.");
@@ -34,6 +34,7 @@ public class Main {
 		dicionario.removerPalavra("Roda");
 		dicionario.removerPalavra("chave");
 		dicionario.pesquisarPorPalavra("Intervenção");
+		*/
 	}
 
 }

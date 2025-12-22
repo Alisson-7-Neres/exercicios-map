@@ -1,5 +1,6 @@
 package com.dio.Map.OperaçõesBasicasComMap;
 
+import java.util.ConcurrentModificationException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,14 +11,16 @@ public class AgendaContatos {
 	public void adicionarContato(String nome, Integer telefone) {
 		contatos.put(nome, telefone);
 	}
-	public void removerContato(String nome) throws InterruptedException {
-		if (contatos.entrySet().stream().filter(c -> c.getKey().contains(nome)) != null) {
+	public void removerContato(String nome) {
+		try {
+		contatos.entrySet().stream().filter(c -> c.getKey().contains(nome)).forEach(p -> {
 			System.out.println("Contato removido!\n" + nome);
-			Thread.sleep(2000);
 			contatos.remove(nome);
-		} else {
-			System.err.println("Contato inexistente!");
+		}); 
+		} catch (ConcurrentModificationException e) {
+			System.err.println("Contato inexistente!" + " '" + nome +"'");
 		}
+		
 	}
 	public void exibirContatos() {
 		System.out.println(contatos.entrySet());
