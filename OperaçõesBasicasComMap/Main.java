@@ -1,4 +1,4 @@
-package com.dio.Map.OperaçõesBasicasComMap;
+package com.dio.map.OperaçõesBasicasComMap;
 
 public class Main {
 	public static void main (String[] args) throws InterruptedException {
