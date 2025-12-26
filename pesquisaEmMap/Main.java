@@ -3,6 +3,7 @@ package com.dio.map.pesquisaEmMap;
 public class Main {
 	public static void main(String[] args) {
 		
+		/*
 		EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
 		
 		estoqueProdutos.adicionarProduto(54789, "Micro-ondas", 127, 597.90);
@@ -16,6 +17,21 @@ public class Main {
 		estoqueProdutos.obterProdutoMaisCaro();
 		estoqueProdutos.obterProdutoMaisBarato();
 		estoqueProdutos.obterProdutoMaiorQuantidadeValorTotalNoEstoque();
+		*/
+		
+		ContagemPalavras contagemPalavras = new ContagemPalavras();
+		
+		contagemPalavras.adicionarPalavra("vermelho", 3);
+		contagemPalavras.adicionarPalavra("amarelo", 2);
+		contagemPalavras.adicionarPalavra("preto", 8);
+		contagemPalavras.adicionarPalavra("azul", 0);
+		
+		contagemPalavras.exibirContagemPalavras();
+		
+		contagemPalavras.removerPalavra("azul");
+		contagemPalavras.removerPalavra("rosa");
+		
+		contagemPalavras.encontrarPalavraMaisFrequente();
 	}
 
 }
