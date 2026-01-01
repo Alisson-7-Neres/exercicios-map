@@ -1,5 +1,7 @@
 package com.dio.map.pesquisaEmMap;
 
+import com.dio.map.OperaçõesBasicasComMap.LivrariaOnline;
+
 public class Main {
 	public static void main(String[] args) {
 		
@@ -17,8 +19,7 @@ public class Main {
 		estoqueProdutos.obterProdutoMaisCaro();
 		estoqueProdutos.obterProdutoMaisBarato();
 		estoqueProdutos.obterProdutoMaiorQuantidadeValorTotalNoEstoque();
-		*/
-		
+
 		ContagemPalavras contagemPalavras = new ContagemPalavras();
 		
 		contagemPalavras.adicionarPalavra("vermelho", 3);
@@ -32,6 +33,22 @@ public class Main {
 		contagemPalavras.removerPalavra("rosa");
 		
 		contagemPalavras.encontrarPalavraMaisFrequente();
+		*/
+		
+		LivrariaOnline livrariaOnline = new LivrariaOnline();
+		livrariaOnline.adicionarLivro("8556510671", "Outsider", "Stephen King", 78.99);
+		livrariaOnline.adicionarLivro("8595810087", "Deixada Para Trás", "Charlie Donlea", 49.80);
+		livrariaOnline.adicionarLivro("9788501116536", "A paciente silenciosa", "Alex Michaelides", 39.80);
+		livrariaOnline.adicionarLivro("6555984562", "O Silêncio dos Inocentes: Entre Cordeiros e Monstros", "Yvonne Tasker", 62.37);
+		livrariaOnline.adicionarLivro("8582852479", "Memórias do subsolo", "Fiódor Dostoiévski", 59.05);
+		livrariaOnline.adicionarLivro("8582850743", "Noites brancas", "Fiódor Dostoiévski", 28.03);
+		
+		livrariaOnline.exibirLivrosOrdenadosPorPreco();
+		livrariaOnline.pesquisarLivrosPorAutor("Alex Michaelides");
+		livrariaOnline.removerLivro("Noites brancas");
+		livrariaOnline.exibirLivrosOrdenadosPorPreco();
+		livrariaOnline.obterLivroMaisCaro();
+		livrariaOnline.exibirLivroMaisBarato();
 	}
 
 }
